@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+:root{
+    --nav:#131e29;
+    --white:#fff;
+    --transition:all linear .3s ;
+    --btn-color:#4bcaff;
+}
+body{
+    font-family: 'Lato', sans-serif;
+   
+}
+/* common css */
+ul li{
+   list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* nav section start */
+nav{
+    background-color:var(--nav) ;
+    border-bottom: 1px solid #e2e9f0;
+}
+nav .container .row{
+    align-items: center;
+}
+
+nav .logo{
+    width: 20%;
+}
+nav .logo img{
+    display: block;
+}
+nav .menu{
+    width:80% ;
+} 
+
+nav .menu ul{
+   
+    display: flex;
+    justify-content: flex-end;
+    
+}
+nav .menu ul li a{
+ display: block;
+ padding: 44px 18px;
+ color: var(--white);
+ font-weight: 700;
+ text-transform: uppercase;
+ transition: var(--transition);
+ -webkit-transition: var(--transition);
+ -moz-transition: var(--transition);
+ -ms-transition: var(--transition);
+ -o-transition: var(--transition);
+}
+nav .menu ul li a:hover{
+   color: var(--btn-color);
+}
+/* nav section end */
+/* banner section  start*/
+#banner{
+    background-image: url(/images/bg1.jpg);
+    background-size: cover;
+    border-bottom: 2px solid #0a3c6e;
+    height: 700px;
+    position: relative;
+
+
+}
+#banner .container,
+#banner .container .row{
+    height: 100%;
+}
+#banner .container .row{
+    align-items: center;
+}
+#banner .banner-img{
+    width: 40%;
+   
+
+}
+#banner .banner-img img{
+ width: 38%;
+    position: absolute;
+    left: 0;
+   bottom:0;
+  
+}
+#banner .banner-content{
+    width: 60%;
+}
+#banner .banner-content h1{
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--white);
+    padding: 38px 0;
+
+}
+#banner .banner-content span{
+    font-weight: 700;
+}
+#banner .banner-content p{
+    color: var(--white);
+    font-size: 18px;
+   padding-bottom: 45px;
+}
+#banner .banner-content .btn {
+    display: inline-block;
+    border: 1px solid white;
+    color: var(--white);
+    border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 22px;
+
+
+}
+#banner .banner-content .btn:hover {
+    background-color: var(--btn-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    
+    box-shadow: 0 5px 0 #277697;
+}
